@@ -1,5 +1,5 @@
 // import Meta from "../components/meta";
-import Header from "../components/header";
+import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
 import { motion } from "framer-motion";
@@ -14,7 +14,7 @@ export default function Layout({ preview, children }) {
   return (
     <>
       {/*<Meta />*/}
-      <Header />
+      <Navbar />
       <div className="min-h-screen">
         <motion.main
           variants={variants} // Pass the variant object into Framer Motion
