@@ -1,6 +1,9 @@
 // import Meta from "../components/meta";
+import Head from "next/head";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import Hero from "../components/hero";
+// import Card from "./card";
 
 import { motion } from "framer-motion";
 
@@ -13,8 +16,23 @@ export default function Layout({ preview, children }) {
 
   return (
     <>
-      {/*<Meta />*/}
+      <Head>
+        <meta charset="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <meta name="author" content="MAria Carolina" />
+        <meta name="keywords" content="Afetto, Pet, Clínica Veterinária" />
+        <link rel="icon" href="/favicon.ico" />
+        <title>Afetto</title>
+        {/* <meta
+          name="google-site-verification"
+          content="ymDSNC0hJKNdPP_u-w3Z6rmZywZ6S2XywCDazFCYV_I"
+        />*/}
+      </Head>
       <Navbar />
+      {/*<Card />*/}
+      <Hero />
       <div className="min-h-screen">
         <motion.main
           variants={variants} // Pass the variant object into Framer Motion
