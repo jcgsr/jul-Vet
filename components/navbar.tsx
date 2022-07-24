@@ -30,14 +30,14 @@ export default function Navbar() {
           {open ? <AiOutlineClose /> : <AiOutlineMenu />}
         </div>
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:flex bg-blue-700 md:bg-orange-700 md:items-center md:pb-0 py-2  absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
             open ? "top-16 opacity-80" : "top-[-480px]"
           } `}
         >
           {links.map((link) => (
             <li
               key={link.name}
-              className="md:ml-8 text-white text-xl md:my-0 my-7 hover:text-blue-900 duration-300"
+              className="md:ml-8 text-white text-xl md:my-0 my-7 hover:bg-orange-900 hover:px-2 py-2 duration-300 ease-in-out"
             >
               <Link href={link.link} className="text-gray-800 ">
                 {link.name}
