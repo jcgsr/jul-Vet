@@ -31,7 +31,7 @@ module.exports = {
         "8xl": "6.25rem",
       },
       boxShadow: {
-        sm: "0 2px 7px rgba(1, 1, 1222, 1)",
+        sm: "0 5px 10px rgba(15, 23, 42, 1)",
         md: "0 8px 30px rgba(1, 1, 1222, 1)",
       },
     },

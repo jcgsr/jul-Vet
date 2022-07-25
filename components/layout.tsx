@@ -3,7 +3,7 @@ import Head from "next/head";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
-// import Card from "./card";
+import Services from "../components/services";
 
 import { motion } from "framer-motion";
 
@@ -31,8 +31,8 @@ export default function Layout({ preview, children }) {
         />*/}
       </Head>
       <Navbar />
-      {/*<Card />*/}
       <Hero />
+      <Services />
       <div className="min-h-screen">
         <motion.main
           variants={variants} // Pass the variant object into Framer Motion
