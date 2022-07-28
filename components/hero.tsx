@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import Card from "./card";
 
-import img from "../assets/dog-sleeping.jpg";
+import img from "../assets/img/dog-sleeping.jpg";
 
 const Hero = () => {
 	return (

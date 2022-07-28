@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
 import Services from "../components/services";
+import About from "../components/about";
 
 import { motion } from "framer-motion";
 
@@ -33,6 +34,7 @@ export default function Layout({ preview, children }) {
       <Navbar />
       <Hero />
       <Services />
+      <About />
       <div className="min-h-screen">
         <motion.main
           variants={variants} // Pass the variant object into Framer Motion
