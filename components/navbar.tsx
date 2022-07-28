@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaDog } from "react-icons/fa";
 
-import Button from "./button.tsx";
+import Button from "./button";
 
 export default function Navbar() {
   let links = [

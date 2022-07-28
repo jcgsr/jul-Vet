@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = (props) => {
+const Card = (props: any) => {
 	return (
 		<div className="rounded opacity-60 absolute sm:w-1/2 z-20 md:left-12 left-2 right-2 shadow-sm  bg-gray-700">
 			<div className="px-6 py-2 ">
