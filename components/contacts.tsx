@@ -8,9 +8,13 @@ import { motion } from "framer-motion";
 
 const Contacts = () => {
 	let contacts = [
-		{ icon: <FaWhatsapp />, link: "#" },
-		{ icon: <FaInstagram />, link: "#" },
-		{ icon: <AiOutlineMail />, link: "mailto:cabralguerra@gnail.com" },
+		{ name: "whats", icon: <FaWhatsapp />, link: "#" },
+		{ name: "insta", icon: <FaInstagram />, link: "#" },
+		{
+			name: "mail",
+			icon: <AiOutlineMail />,
+			link: "mailto:cabralguerra@gnail.com",
+		},
 	];
 	return (
 		<section className="bg-white flex flex-col">
@@ -24,7 +28,7 @@ const Contacts = () => {
 				{contacts.map((contact) => (
 					<Link
 						className="hover:text-slate-900 ease-in-out duration-300"
-						key={contact.icon}
+						key={contact.name}
 						href={contact.link}
 					>
 						{contact.icon}
