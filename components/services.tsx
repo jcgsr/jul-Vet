@@ -39,7 +39,7 @@ const Services = () => {
 
 	return (
 		<section className="bg-slate-900" id="services">
-			<h1 className="text-3xl font-bold text-center py-8">
+			<h1 className="text-3xl font-bold text-center py-8 text-white">
 				Nossos Serviços
 			</h1>
 
