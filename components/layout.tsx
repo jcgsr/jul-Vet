@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import Hero from "../components/hero";
 import Services from "../components/services";
 import About from "../components/about";
+import Contacts from "../components/contacts";
 
 import { motion } from "framer-motion";
 
@@ -35,18 +36,19 @@ export default function Layout({ preview, children }: any) {
       <Hero />
       <Services />
       <About />
-      <div className="min-h-screen">
-        <motion.main
-          variants={variants} // Pass the variant object into Framer Motion
-          initial="hidden" // Set the initial state to variants.hidden
-          animate="enter" // Animated state to variants.enter
-          exit="exit" // Exit state (used later) to variants.exit
-          transition={{ type: "linear" }} // Set the transition to linear
-          className=""
-        >
-          {children}
-        </motion.main>
-      </div>
+      <Contacts />
+
+      <motion.main
+        variants={variants} // Pass the variant object into Framer Motion
+        initial="hidden" // Set the initial state to variants.hidden
+        animate="enter" // Animated state to variants.enter
+        exit="exit" // Exit state (used later) to variants.exit
+        transition={{ type: "linear" }} // Set the transition to linear
+        className=""
+      >
+        {children}
+      </motion.main>
+
       <Footer />
     </>
   );

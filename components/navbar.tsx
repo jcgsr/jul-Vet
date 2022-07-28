@@ -10,7 +10,7 @@ export default function Navbar() {
     { name: "HOME", link: "/" },
     { name: "SERVIÇOS", link: "#services" },
     { name: "SOBRE", link: "#about" },
-    { name: "CONTATOS", link: "/" },
+    { name: "CONTATOS", link: "#contacts" },
   ];
 
   const [open, setOpen] = useState(false);
