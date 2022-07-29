@@ -23,14 +23,10 @@ const Contacts = () => {
 			</h1>
 			<div
 				id="contacts"
-				className="flex justify-around text-orange-900  flex-row mb-10 text-6xl md:text-7xl cursor-pointer"
+				className="flex justify-around text-orange-900  flex-row mb-10 lg:mb-16 text-6xl md:text-7xl cursor-pointer"
 			>
 				{contacts.map((contact) => (
-					<Link
-						className="hover:text-slate-900 ease-in-out duration-300"
-						key={contact.name}
-						href={contact.link}
-					>
+					<Link key={contact.name} href={contact.link}>
 						{contact.icon}
 					</Link>
 				))}
